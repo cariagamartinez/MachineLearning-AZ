@@ -18,13 +18,15 @@ dataset = dataset[, 2:3]
 # testing_set[,2:3] = scale(testing_set[,2:3])
 
 # Ajustar SVR con el Conjunto de Datos
-#install.packages("e1071")
-library(e1071) 
+#install.packages("e1071") Este es el paquete que vamos a usar para SVR
+
+library(e1071)
+
 regression = svm(formula = Salary ~ ., 
                  data = dataset, 
                  type = "eps-regression", 
                  kernel = "radial")
-  
+
 # Predicción de nuevos resultados con SVR 
 y_pred = predict(regression, newdata = data.frame(Level = 6.5))
 
@@ -36,8 +38,11 @@ ggplot() +
   geom_point(aes(x = dataset$Level , y = dataset$Salary),
              color = "red") +
   geom_line(aes(x = dataset$Level, y = predict(regression, 
-                                        newdata = data.frame(Level = dataset$Level))),
+                                               newdata = data.frame(Level = dataset$Level))),
             color = "blue") +
   ggtitle("Predicción (SVR)") +
   xlab("Nivel del empleado") +
   ylab("Sueldo (en $)")
+
+#En este caso el modelo rechazará el valor del sueldo del jefe porque parece ser un 
+# outlier
