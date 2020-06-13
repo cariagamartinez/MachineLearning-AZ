@@ -2,6 +2,7 @@
 output:
   pdf_document: 
     keep_tex: yes
+    latex_engine: xelatex
   html_document: default
 ---
 # Repositorio del Curso [Machine Learning de A a la Z: R y Python para Data Science](https://www.udemy.com/draft/2241862/?couponCode=GITHUB_PROMO_JB)

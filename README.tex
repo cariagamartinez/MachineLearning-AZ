@@ -1,0 +1,225 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
+\hypersetup{
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+
+\hypertarget{repositorio-del-curso-machine-learning-de-a-a-la-z-r-y-python-para-data-science}{%
+\section{\texorpdfstring{Repositorio del Curso
+\href{https://www.udemy.com/draft/2241862/?couponCode=GITHUB_PROMO_JB}{Machine
+Learning de A a la Z: R y Python para Data
+Science}}{Repositorio del Curso Machine Learning de A a la Z: R y Python para Data Science}}\label{repositorio-del-curso-machine-learning-de-a-a-la-z-r-y-python-para-data-science}}
+
+\hypertarget{creado-por-kirill-eremenko-y-hadelin-de-ponteves}{%
+\subsection{\texorpdfstring{Creado por
+\href{https://www.udemy.com/user/kirilleremenko/}{Kirill Eremenko} y
+\href{https://www.udemy.com/user/hadelin-de-ponteves/}{Hadelin de
+Ponteves}}{Creado por Kirill Eremenko y Hadelin de Ponteves}}\label{creado-por-kirill-eremenko-y-hadelin-de-ponteves}}
+
+\hypertarget{traducido-al-espauxf1ol-por-juan-gabriel-gomila-salas}{%
+\subsection{\texorpdfstring{Traducido al español por
+\href{https://www.udemy.com/user/juangabriel2}{Juan Gabriel Gomila
+Salas}}{Traducido al español por Juan Gabriel Gomila Salas}}\label{traducido-al-espauxf1ol-por-juan-gabriel-gomila-salas}}
+
+¿Estás interesado en conocer a fondo el mundo del Machine Learning?
+Entonces este curso está diseñado especialmente para ti!!
+
+Este curso ha sido diseñado por Data Scientists profesionales para
+compartir nuestro conocimiento y ayudarte a aprender la teoría compleja,
+los algoritmos y librerías de programación de un modo fácil y sencillo.
+
+En él te guiaremos paso a paso en el mundo del Machine Learning. Con
+cada clase desarrollarás nuevas habilidades y mejorarás tus
+conocimientos de este complicado y lucrativa sub rama del Data Science.
+
+\hypertarget{temario-del-curso}{%
+\subsubsection{Temario del curso}\label{temario-del-curso}}
+
+Este curso es divertido y ameno pero al mismo tiempo todo un reto pues
+tenemos mucho de Machine Learning por aprender. Lo hemos estructurado
+del siguiente modo:
+
+\begin{itemize}
+\tightlist
+\item
+  Parte 1 - Preprocesamiento de datos
+\item
+  Parte 2 - Regresión: Regresión Lineal Simple, Regresión Lineal
+  Múltiple, Regresión Polinomial, SVR, Regresión en Árboles de Decisión
+  y Regresión con Bosques Aleatorios
+\item
+  Parte 3 - Clasificación: Regresión Logística, K-NN, SVM, Kernel SVM,
+  Naive Bayes, Clasificación con Árboles de Decisión y Clasificación con
+  Bosques Aleatorios
+\item
+  Parte 4 - Clustering: K-Means, Clustering Jerárquico
+\item
+  Parte 5 - Aprendizaje por Reglas de Asociación: Apriori, Eclat
+\item
+  Parte 6 - Reinforcement Learning: Límite de Confianza Superior,
+  Muestreo Thompson
+\item
+  Parte 7 - Procesamiento Natural del Lenguaje: Modelo de Bag-of-words y
+  algoritmos de NLP
+\item
+  Parte 8 - Deep Learning: Redes Neuronales Artificiales y Redes
+  Neuronales Convolucionales
+\item
+  Parte 9 - Reducción de la dimensión: ACP, LDA, Kernel ACP
+\item
+  Parte 10 - Selección de Modelos \& Boosting: k-fold Cross Validation,
+  Ajuste de Parámetros, Grid Search, XGBoost
+\end{itemize}
+
+Además, el curso está repleto de ejercicios prácticos basados en
+ejemplos de la vida real, de modo que no solo aprenderás teoría, si no
+también pondrás en práctica tus propios modelos con ejemplos guiados.
+
+Y como bonus, este curso incluye todo el código en Python y R para que
+lo descargues y uses en tus propios proyectos.
+
+Puedes apuntarte al curso de Machine Learning con un descuento del 90\%
+de su precio original
+\href{https://www.udemy.com/draft/2241862/?couponCode=GITHUB_PROMO_JB}{desde
+aquí}
+
+\hypertarget{lo-que-aprenderuxe1s}{%
+\subsubsection{Lo que aprenderás}\label{lo-que-aprenderuxe1s}}
+
+\begin{itemize}
+\tightlist
+\item
+  Dominar el Machine Learning con R y con Python.
+\item
+  Tener intuición en la mayoría de modelos de Machine Learning.
+\item
+  Hacer predicciones precisas y acertadas.
+\item
+  Crear unos análisis elaborados.
+\item
+  Crear modelos de Machine Learning robustos y consistentes.
+\item
+  Crear valor añadido a tu propio negocio.
+\item
+  Utilizar el Machine Learning para cuestiones personales.
+\item
+  Dominar aspectos específicos como por ejemplo Reinforcement Learning,
+  NLP o Deep Learning
+\item
+  Conocer las técnicas más avanzadas como la reducción de la
+  dimensionalidad.
+\item
+  Saber qué modelo de Machine Learning usar para cada tipo de problema.
+\item
+  Crear toda una librería de modelos de Machine Learning y saber cómo
+  combinarlos para resolver cualquier problema.
+\end{itemize}
+
+\hypertarget{hay-requisitos-para-seguir-correctamente-el-curso}{%
+\subsubsection{¿Hay requisitos para seguir correctamente el
+curso?}\label{hay-requisitos-para-seguir-correctamente-el-curso}}
+
+\begin{itemize}
+\tightlist
+\item
+  Con el nivel de matemáticas de secundaria y bachillerato es
+  suficiente.
+\end{itemize}
+
+\hypertarget{para-quiuxe9n-es-este-curso}{%
+\subsubsection{¿Para quién es este
+curso?}\label{para-quiuxe9n-es-este-curso}}
+
+\begin{itemize}
+\tightlist
+\item
+  Cualquier estudiante que esté interesado en el Machine Learning.
+\item
+  Estudiantes con nivel de matemáticas de bachillerato que quieren
+  iniciarse en Machine Learning.
+\item
+  Estudiantes de nivel intermedio con conocimientos básicos de Machine
+  Learning, incluyendo algoritmos clásicos de regresión lineal o
+  logística, pero que quieren aprender más y explorar los diferentes
+  campos del Machine Learning.
+\item
+  Estudiantes que no se sienten cómodos programando pero se interesan
+  por el Machine Learning y quieren aplicar las técnicas al análisis de
+  data sets.
+\item
+  Universitarios que quieren iniciarse en el mundo del Data Science.
+\item
+  Cualquier analista de datos que quiera mejorar sus habilidades en
+  Machine Learning.
+\item
+  Personas que no están satisfechas con su trabajo y quieren convertirse
+  en Data Scientist.
+\item
+  Cualquier persona que quiera añadir valor a su empresa con el poder
+  del Machine Learning.
+\end{itemize}
+
+\end{document}
